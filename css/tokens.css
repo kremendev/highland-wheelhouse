@@ -2,7 +2,7 @@
 
 :root {
    /* Colours */
-   --color-orange: #d98326; /* picked from the design, check against the brand guide */
+   --color-orange: #d98326;
    --color-orange-hover: #c27820;
    --color-deep-green: #18261f;
    --color-raised-deep: #1f3129;
@@ -11,6 +11,9 @@
    --grade-green: #3fa35a;
    --grade-blue: #4b8fd9;
    --grade-red: #e0574e;
+   --bento-background: #2e574b;
+   --white: #ffffff;
+   --black: #000000;
 
    /* Fonts */
    --font-heading: 'Poppins', system-ui, sans-serif;

@@ -14,21 +14,25 @@
    </head>
    <body>
       <header class="header-on-photo">
-         <div class="header-logo">
-            <img
-               src="assets/images/desktop/logo-white-398w.avif"
-               alt="logo-white"
-            />
+         <div class="header-inner container">
+            <div class="header-logo">
+               <img
+                  src="assets/images/desktop/logo-white-398w.avif"
+                  alt="logo-white"
+               />
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="index.html" aria-current="page">Home</a></li>
+                  <li><a href="pages/bikes.html">Bikes</a></li>
+                  <li>
+                     <a href="pages/bike-servicing.html">Bike Servicing</a>
+                  </li>
+                  <li><a href="pages/bike-hire.html">Bike Hire</a></li>
+               </ul>
+            </nav>
+            <a class="button-on-photo" href="pages/contact.html">Contact us</a>
          </div>
-         <nav>
-            <ul>
-               <li><a href="index.html" aria-current="page">Home</a></li>
-               <li><a href="pages/bikes.html">Bikes</a></li>
-               <li><a href="pages/bike-servicing.html">Bike Servicing</a></li>
-               <li><a href="pages/bike-hire.html">Bike Hire</a></li>
-            </ul>
-         </nav>
-         <a class="button-on-photo" href="pages/contact.html">Contact us</a>
       </header>
 
       <main>
@@ -56,24 +60,159 @@
                />
             </picture>
             <div class="hero-info">
-               <h1 class="hero-title">Ride Wilderness Forest</h1>
-               <p class="hero-text">
-                  Bike hire, sales and servicing at the trailhead, in the heart
-                  of the Highlands. Green to Black graded trails start at our
-                  door.
-               </p>
-               <div class="hero-actions">
-                  <a class="button-main" href="pages/bike-hire.html">Hire a bike</a>
-                  <a class="hero-link" href="#offers">
-                     See this month’s offers <span aria-hidden="true">→</span>
-                  </a>
+               <div class="container">
+                  <h1 class="hero-title">Ride Wilderness Forest</h1>
+                  <p class="hero-text">
+                     Bike hire, sales and servicing at the trailhead, in the
+                     heart of the Highlands. Green to Black graded trails start
+                     at our door.
+                  </p>
+                  <div class="hero-actions">
+                     <a class="button-main" href="pages/bike-hire.html"
+                        >Hire a bike</a
+                     >
+                     <a class="hero-link" href="#offers">
+                        See this month’s offers
+                        <span aria-hidden="true">→</span>
+                     </a>
+                  </div>
+                  <ul class="hero-strip">
+                     <!-- TODO FUNCTION FOR OPEN TIME -->
+                     <li>Open today 09:30 – 18:00</li>
+                     <li>100+ hire bikes from £18</li>
+                     <li>
+                        <a href="tel:+441999721724522">01999721 724 522</a>
+                     </li>
+                  </ul>
                </div>
-               <ul class="hero-strip">
-                  <!-- TODO FUNCTION FOR OPEN TIME -->
-                  <li>Open today 09:30 – 18:00</li>
-                  <li>100+ hire bikes from £18</li>
-                  <li><a href="tel:+441999721724522">01999721 724 522</a></li>
-               </ul>
+            </div>
+         </section>
+
+         <section class="content section">
+            <div class="container">
+               <div class="content-header grid">
+                  <h2>Everything for a day on the trails</h2>
+                  <p>
+                     Wilderness Forest is a mountain biking Mecca in the heart
+                     of the Highlands. Our shop sits right at the trails, with
+                     more than 100 hire bikes, a full workshop and the kit you
+                     need.
+                  </p>
+               </div>
+               <div class="bento grid">
+                  <!-- TODO SOURCE AND MEDIA FOR PICTURES -->
+                  <!-- TODO CHANGE ARROW FOR IMAGES -->
+                  <a class="bike-hire" href="pages/bike-hire.html">
+                     <div class="picture-container">
+                        <picture>
+                           <img
+                              src="assets/images/desktop/bike-hire-riders-1400w.webp"
+                              alt="Two riders on a hillside trail"
+                              width="1400"
+                              height="934"
+                           />
+                        </picture>
+                     </div>
+                     <span class="bento-item-price">From £18</span>
+                     <span class="bento-item-arrow">↗</span>
+                     <div class="bento-item-info">
+                        <h3>Bike hire</h3>
+                        <p>
+                           More than 100 bikes: full-suspension trail bikes,
+                           hardtails, road bikes, kids’ bikes and tagalongs.
+                        </p>
+                     </div>
+                  </a>
+                  <div class="servicing">
+                     <div class="picture-container">
+                        <picture>
+                           <img
+                              src="assets/images/desktop/servicing-cassette-640w.avif"
+                              alt="Close-up of a bike cassette and gears"
+                              width="640"
+                              height="426"
+                           />
+                        </picture>
+                     </div>
+                     <span class="bento-item-price">From £30</span>
+                     <div class="bento-item-info">
+                        <h3>Servicing</h3>
+                        <p>Gears, brakes and wheels, done on site.</p>
+                     </div>
+                  </div>
+                  <div class="new-bikes">
+                     <div class="picture-container">
+                        <picture>
+                           <img
+                              src="assets/images/desktop/offer-whyte-ridgeway-800w.avif"
+                              alt="Ridgeway hybrid bike"
+                              width="800"
+                              height="580"
+                           />
+                        </picture>
+                     </div>
+                     <div class="bento-item-info">
+                        <h3>New bikes</h3>
+                        <p>Trek, Orange, Genesis and Santa Cruz.</p>
+                     </div>
+                  </div>
+
+                  <div class="green-to-black-trails">
+                     <div class="picture-container">
+                        <picture>
+                           <img
+                              src="assets/images/desktop/trails-sunset-ridge-602w.avif"
+                              alt="A rider on a ridge trail at sunset"
+                              width="602"
+                              height="385"
+                           />
+                        </picture>
+                     </div>
+                     <span class="bento-item-arrow">↗</span>
+                     <div class="bento-item-info">
+                        <h3>Green to Black trails</h3>
+                        <p>
+                           Graded trails and a free-ride area, right outside the
+                           shop.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="free-ride-area">
+                     <div class="picture-container">
+                        <picture>
+                           <img
+                              src="assets/images/desktop/free-ride-jump-602w.avif"
+                              alt="A rider in the air on a free-ride jump"
+                              width="602"
+                              height="339"
+                           />
+                        </picture>
+                     </div>
+                     <div class="bento-item-info">
+                        <h3>Free-ride area</h3>
+                        <p>Jumps, drops and lines for every level.</p>
+                     </div>
+                  </div>
+
+                  <div class="kit-clothing-advice">
+                     <div class="bento-item-info" style="bottom: 0; top: 28px">
+                        <h3>Kit, clothing and advice</h3>
+                        <p>
+                           Clothing and accessories from Gore Bike Wear, Endura,
+                           Shimano, Hope and Bontrager. Our staff are all
+                           experienced riders, so ask them about the best routes
+                           and today’s trail conditions.
+                        </p>
+                        <div class="ask-team-link">
+                           <a style="color: white" href="#offers">
+                              Ask the team
+                              <span aria-hidden="true">→</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
       </main>

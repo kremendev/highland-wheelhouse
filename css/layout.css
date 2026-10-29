@@ -1,1 +1,18 @@
 /* Page layout: container, section spacing and grid. */
+
+.container {
+   width: 100%;
+   max-width: calc(var(--content-max) + var(--page-margin) * 2);
+   margin-inline: auto;
+   padding-inline: var(--page-margin);
+}
+
+.section {
+   padding-block: 128px;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(12, minmax(0, 1fr));
+   column-gap: 24px;
+}
