@@ -1,2 +1,25 @@
-/* Design tokens: colours, fonts, type sizes, spacing, radius and motion as custom properties on :root.
-   Every other file uses these variables, never raw values. */
+/* Design tokens: colours, fonts, type sizes, spacing. */
+
+:root {
+   /* Colours */
+   --color-orange: #d98326; /* picked from the design, check against the brand guide */
+   --color-orange-hover: #c27820;
+   --color-deep-green: #18261f;
+   --color-raised-deep: #1f3129;
+   --color-soft-on-dark: #b4c0ba;
+   --color-near-black: #1f1f1f;
+   --grade-green: #3fa35a;
+   --grade-blue: #4b8fd9;
+   --grade-red: #e0574e;
+
+   /* Fonts */
+   --font-heading: 'Poppins', system-ui, sans-serif;
+   --font-body: 'Open Sauce Sans', system-ui, sans-serif;
+
+   /* Shape */
+   --radius: 20px;
+
+   /* Layout */
+   --page-margin: 40px;
+   --content-max: 1360px;
+}

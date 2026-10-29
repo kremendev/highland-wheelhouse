@@ -1,17 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Highland Wheelhouse | Bike hire, sales and servicing</title>
-      <meta name="description" content="Bike hire, sales and servicing at the trailhead in Wilderness Forest, Scottish Highlands. 100+ hire bikes from £18 and Green to Black graded trails at our door." />
+      <meta
+         name="description"
+         content="Bike hire, sales and servicing at the trailhead in Wilderness Forest, Scottish Highlands. 100+ hire bikes from £18 and Green to Black graded trails at our door."
+      />
       <link rel="stylesheet" href="css/main.css" />
       <link rel="stylesheet" href="css/pages/home.css" />
       <script src="js/main.js" defer></script>
    </head>
    <body>
-      <header>
-         <nav aria-label="Main">
+      <header class="header-on-photo">
+         <div class="header-logo">
+            <img
+               src="assets/images/desktop/logo-white-398w.avif"
+               alt="logo-white"
+            />
+         </div>
+         <nav>
             <ul>
                <li><a href="index.html" aria-current="page">Home</a></li>
                <li><a href="pages/bikes.html">Bikes</a></li>
@@ -19,10 +28,55 @@
                <li><a href="pages/bike-hire.html">Bike Hire</a></li>
             </ul>
          </nav>
-         <a href="pages/contact.html">Contact us</a>
+         <a class="button-on-photo" href="pages/contact.html">Contact us</a>
       </header>
 
-      <main></main>
+      <main>
+         <section class="hero">
+            <picture class="hero-media">
+               <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/phone/hero-forest-trail-780w.avif"
+                  type="image/avif"
+               />
+               <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/phone/hero-forest-trail-780w.webp"
+                  type="image/webp"
+               />
+               <source
+                  srcset="assets/images/desktop/hero-forest-trail-1379w.avif"
+                  type="image/avif"
+               />
+               <img
+                  src="assets/images/desktop/hero-forest-trail-1379w.webp"
+                  alt="A rider on a forest trail"
+                  width="1379"
+                  height="1034"
+               />
+            </picture>
+            <div class="hero-info">
+               <h1 class="hero-title">Ride Wilderness Forest</h1>
+               <p class="hero-text">
+                  Bike hire, sales and servicing at the trailhead, in the heart
+                  of the Highlands. Green to Black graded trails start at our
+                  door.
+               </p>
+               <div class="hero-actions">
+                  <a class="button-main" href="pages/bike-hire.html">Hire a bike</a>
+                  <a class="hero-link" href="#offers">
+                     See this month’s offers <span aria-hidden="true">→</span>
+                  </a>
+               </div>
+               <ul class="hero-strip">
+                  <!-- TODO FUNCTION FOR OPEN TIME -->
+                  <li>Open today 09:30 – 18:00</li>
+                  <li>100+ hire bikes from £18</li>
+                  <li><a href="tel:+441999721724522">01999721 724 522</a></li>
+               </ul>
+            </div>
+         </section>
+      </main>
 
       <footer></footer>
    </body>

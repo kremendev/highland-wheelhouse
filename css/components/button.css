@@ -1,1 +1,41 @@
 /* Button: main (orange), second (outline), on a photo, and round slide arrows. All states. */
+
+/* Main button: orange, fully round */
+.button-main {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 56px;
+   padding: 0 32px;
+   border-radius: 999px;
+
+   background: var(--color-orange);
+   color: var(--color-near-black);
+   font-family: var(--font-heading);
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.button-main:hover {
+   background: var(--color-orange-hover);
+}
+
+/* On a photo: white outline, smaller (header "Contact us") */
+.button-on-photo {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 44px;
+   padding: 0 22px;
+   border: 2px solid #fff;
+   border-radius: 999px;
+
+   color: #fff;
+   font-family: var(--font-heading);
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.button-on-photo:hover {
+   background: rgb(255 255 255 / 0.15);
+}

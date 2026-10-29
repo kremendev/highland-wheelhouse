@@ -1,1 +1,37 @@
-/* Site header: logo, main navigation and "Contact us" button. Same markup on every page. */
+/* Header: logo, links, buttons */
+
+header {
+   height: 96px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   padding: 0 var(--page-margin);
+}
+
+/* Header sitting on a photo (home page only) */
+.header-on-photo {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+
+   color: #fff;
+}
+
+.header-logo img {
+   height: 44px;
+   width: auto;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 36px;
+
+   list-style: none;
+   padding: 0;
+}
