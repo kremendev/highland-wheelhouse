@@ -1,6 +1,5 @@
 /* Button: main (orange), second (outline), on a photo, and round slide arrows. All states. */
 
-/* Main button: orange, fully round */
 .button-main {
    display: inline-flex;
    align-items: center;
@@ -20,7 +19,6 @@
    background: var(--color-orange-hover);
 }
 
-/* On a photo: white outline, smaller (header "Contact us") */
 .button-on-photo {
    display: inline-flex;
    align-items: center;
@@ -38,4 +36,48 @@
 
 .button-on-photo:hover {
    background: rgb(255 255 255 / 0.15);
+}
+
+.slide-arrow {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 56px;
+   height: 56px;
+   padding: 0;
+   border: 1.5px solid rgb(31 31 31 / 0.45);
+   border-radius: 50%;
+
+   background: var(--white);
+   color: var(--color-near-black);
+   transition:
+      background-color 0.2s,
+      border-color 0.2s,
+      opacity 0.2s;
+}
+
+.slide-arrow svg {
+   width: 20px;
+   height: 20px;
+}
+
+.slide-arrow:hover {
+   border-color: var(--color-near-black);
+}
+
+.slide-arrow-next {
+   border-color: var(--bento-background);
+   background: var(--bento-background);
+   color: var(--white);
+}
+
+.slide-arrow-next:hover {
+   border-color: var(--color-deep-green);
+   background: var(--color-deep-green);
+}
+
+.slide-arrow:disabled {
+   opacity: 0.35;
+   cursor: default;
+   pointer-events: none;
 }

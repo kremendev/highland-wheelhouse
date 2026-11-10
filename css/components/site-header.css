@@ -7,14 +7,12 @@ header {
    align-items: center;
 }
 
-/* Inside the container, so it lines up with the sections below */
 .header-inner {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-/* Header sitting on a photo (home page only) */
 .header-on-photo {
    position: absolute;
    top: 0;
