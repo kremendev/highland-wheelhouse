@@ -79,6 +79,10 @@
 }
 /* Content */
 
+.content-section {
+   padding-top: 64px;
+}
+
 .content-header {
    align-items: end;
    padding-bottom: 56px;
@@ -86,9 +90,6 @@
 
 .content-header h2 {
    grid-column: 1 / 8;
-   font-size: 56px;
-   line-height: 60px;
-   letter-spacing: -1.6px;
 }
 
 .content-header p {
@@ -255,9 +256,6 @@
 
 .month-offer-header h2 {
    grid-column: 1/7;
-   font-size: 56px;
-   line-height: 60px;
-   letter-spacing: -1.6px;
 }
 
 .month-offer-header p {
@@ -292,4 +290,41 @@
 .bikes-row .card {
    flex: 0 0 400px;
    scroll-snap-align: start;
+}
+
+/* trails section */
+.trails-section {
+   background-color: var(--color-raised-deep);
+}
+
+.trails-section .container {
+   align-items: start;
+}
+
+.trail-rider-picture {
+   grid-column: 1 / 6;
+   aspect-ratio: 4 / 5;
+}
+
+.trail-rider-picture img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: var(--radius);
+}
+
+/* List block: 6 columns, starting at column 7 */
+.trails-header {
+   grid-column: 7 / 13;
+   color: var(--white);
+}
+
+.trails-header p {
+   margin-top: 24px;
+   font-size: 18px;
+   line-height: 28px;
+}
+
+.trails-header .trail-list {
+   margin-top: 48px;
 }

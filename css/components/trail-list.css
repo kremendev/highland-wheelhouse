@@ -1,0 +1,99 @@
+/* Trail list: accordion of graded trails (details/summary per row). */
+
+.trail-list {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 0;
+   list-style: none;
+}
+
+.trail {
+   padding: 18px 24px;
+   border-radius: 20px;
+   background: rgb(255 255 255 / 0.06);
+   color: var(--color-soft-on-dark);
+   transition: background-color 0.2s ease;
+}
+
+.trail:hover {
+   background: rgb(255 255 255 / 0.1);
+}
+
+.trail[open] {
+   padding: 24px;
+   background: rgb(180 192 186 / 0.18);
+   color: var(--white);
+}
+
+/* Row header */
+
+.trail-head {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   list-style: none;
+   cursor: pointer;
+}
+
+.trail-head::-webkit-details-marker {
+   display: none;
+}
+
+.trail-dot {
+   flex: none;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+}
+
+.trail-dot--outline {
+   border: 1.5px solid currentColor;
+}
+
+.trail-name {
+   font-family: var(--font-heading);
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.trail-type {
+   margin-left: auto;
+   font-size: 13px;
+   line-height: 20px;
+   text-align: right;
+}
+
+.trail[open] .trail-name {
+   font-size: 24px;
+   line-height: 32px;
+}
+
+.trail[open] .trail-type {
+   font-weight: 600;
+}
+
+.trail-link {
+   align-self: flex-start;
+   margin-top: 4px;
+   font-family: var(--font-heading);
+   font-weight: 700;
+   font-size: 15px;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+   color: var(--white);
+}
+/* Expanded content */
+
+.trail-body {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   margin-top: 12px;
+}
+
+.trail-description {
+   font-size: 16px;
+   line-height: 24px;
+}
