@@ -20,6 +20,26 @@
    background: var(--color-orange-hover);
 }
 
+.button-second {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 56px;
+   padding: 0 32px;
+   border: 2px solid var(--bento-background);
+   border-radius: 999px;
+
+   color: var(--bento-background);
+   font-family: var(--font-heading);
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.button-second:hover {
+   background: var(--bento-background);
+   color: var(--white);
+}
+
 .button-on-photo {
    display: inline-flex;
    align-items: center;

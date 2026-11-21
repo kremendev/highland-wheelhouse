@@ -1,0 +1,61 @@
+/* Visit card */
+
+.visit-card {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 440px;
+   padding: 36px;
+   border-radius: var(--radius);
+   background-color: var(--color-cream);
+}
+
+.visit-card-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.visit-card h3 {
+   font-weight: 600;
+   font-size: 28px;
+}
+
+.open-now {
+   padding: 4px 12px;
+   border-radius: 999px;
+   background-color: #e5f1e9;
+   color: #1e6b3a;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.open-now.closed {
+   background-color: rgb(31 31 31 / 0.08);
+   color: rgb(31 31 31 / 0.6);
+}
+
+.open-times {
+   width: 100%;
+   padding: 12px 20px;
+   border-radius: var(--radius);
+   background-color: var(--white);
+}
+
+.open-times td {
+   padding: 4px 0;
+}
+
+.open-times td + td {
+   text-align: right;
+}
+
+.today {
+   font-weight: 600;
+}
+
+.visit-contacts {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
