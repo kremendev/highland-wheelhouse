@@ -11,6 +11,7 @@
       <!-- CSS -->
       <link rel="stylesheet" href="css/main.css" />
       <link rel="stylesheet" href="css/pages/home.css" />
+      <link rel="stylesheet" href="libs/lightbox3/lightbox3.css" />
 
       <!-- scripts -->
       <script src="js/offer-cards/offer-cards-data.js" defer></script>
@@ -22,6 +23,8 @@
       <script src="js/contact/contact-modal.js" defer></script>
       <script src="js/hire/hire-form.js" defer></script>
       <script src="js/open-time/open-time.js" defer></script>
+      <script src="libs/lightbox3/lightbox3.min.js" defer></script>
+      <script src="js/gallery/trails-gallery.js" defer></script>
    </head>
    <body>
       <header class="header-on-photo">
@@ -165,7 +168,10 @@
                      </div>
                   </div>
 
-                  <div class="green-to-black-trails">
+                  <a
+                     class="green-to-black-trails open-gallery"
+                     href="#trails-gallery"
+                  >
                      <div class="picture-container">
                         <picture>
                            <img
@@ -186,7 +192,7 @@
                            shop.
                         </p>
                      </div>
-                  </div>
+                  </a>
 
                   <div class="free-ride-area">
                      <div class="picture-container">
@@ -226,6 +232,40 @@
                         </div>
                      </div>
                   </div>
+               </div>
+
+               <!-- trails gallery -->
+               <div id="trails-gallery" hidden>
+                  <a
+                     href="assets/images/gallery/trail-map.svg"
+                     data-lightbox="trails"
+                     data-caption="Trail map: every trail starts at the shop"
+                  ></a>
+                  <a
+                     href="assets/images/gallery/trail-green-1536w.avif"
+                     data-lightbox="trails"
+                     data-caption="Green trail: wide and smooth, with gentle climbs and descents"
+                  ></a>
+                  <a
+                     href="assets/images/gallery/trail-blue-1536w.avif"
+                     data-lightbox="trails"
+                     data-caption="Blue trail: tree roots, small rock steps, berms and small jumps"
+                  ></a>
+                  <a
+                     href="assets/images/gallery/trail-red-1536w.avif"
+                     data-lightbox="trails"
+                     data-caption="Red trail: steep climbs and technical descents over large rocks"
+                  ></a>
+                  <a
+                     href="assets/images/gallery/trail-black-1536w.avif"
+                     data-lightbox="trails"
+                     data-caption="Black trail: long, steep climbs and fast descents"
+                  ></a>
+                  <a
+                     href="assets/images/gallery/trail-free-ride-1536w.avif"
+                     data-lightbox="trails"
+                     data-caption="Free-ride area: jump lines, drops and berms for every level"
+                  ></a>
                </div>
             </div>
          </section>
