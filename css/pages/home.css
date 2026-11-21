@@ -328,3 +328,28 @@
 .trails-header .trail-list {
    margin-top: 48px;
 }
+
+/* trails section */
+
+/* prices section */
+
+.prices-section {
+   background-color: var(--color-cream);
+}
+
+.prices-header {
+   align-items: center;
+   grid-column: 1/13;
+   padding-bottom: 64px;
+}
+
+.prices-header h2 {
+   grid-column: 1/8;
+}
+
+.prices-header p {
+   grid-column: 8/13;
+   font-size: 18px;
+   line-height: 28px;
+}
+/* prices section */

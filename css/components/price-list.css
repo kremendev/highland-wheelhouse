@@ -1,0 +1,77 @@
+.price-list {
+   grid-column: 7/13;
+}
+
+.price-list table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.price-list h3 {
+   font-weight: 600;
+   font-size: 28px;
+}
+
+.hire-bikes-table td,
+.servicing-table td {
+   padding: 16px 0;
+   font-size: 18px;
+}
+
+/* prices */
+.hire-bikes-table td + td,
+.servicing-table td + td {
+   width: 104px;
+   text-align: right;
+   font-family: var(--font-heading);
+   font-weight: 600;
+}
+
+/* title row */
+.hire-bikes-table tr:first-child td,
+.servicing-table tr:first-child td {
+   padding: 0 0 12px;
+}
+
+.hire-bikes-table tr:first-child td + td {
+   font-family: var(--font-body);
+   font-weight: 400;
+   font-size: 15px;
+   color: rgb(31 31 31 / 0.6);
+}
+
+.bike-hire-container p {
+   margin-top: 12px;
+   font-size: 15px;
+   color: rgb(31 31 31 / 0.6);
+}
+
+.servicing-list {
+   margin-top: 56px;
+   scroll-margin-top: 40px;
+}
+
+/* every service includes */
+
+.includes-list {
+   margin-top: 20px;
+   padding: 24px 28px;
+   border-radius: var(--radius);
+   background-color: var(--white);
+}
+
+.includes-table th {
+   padding-bottom: 12px;
+   text-align: left;
+   font-family: var(--font-heading);
+   font-weight: 600;
+}
+
+.includes-table td {
+   padding: 4px 0;
+}
+
+.includes-table td::before {
+   content: '✓ ';
+   color: var(--grade-green);
+}
