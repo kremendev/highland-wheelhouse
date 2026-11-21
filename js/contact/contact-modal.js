@@ -82,4 +82,8 @@ if (contactModal && contactForm && closeButton) {
       alert('Thank you! We will get back to you soon.');
       contactForm.reset();
    });
+
+   if (location.hash === '#contact') {
+      contactModal.showModal();
+   }
 }

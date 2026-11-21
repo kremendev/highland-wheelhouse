@@ -1,0 +1,64 @@
+/* 404 page */
+
+.not-found {
+   display: grid;
+   grid-template-rows: minmax(0, 1fr);
+   height: 100vh;
+   min-height: 640px;
+   color: var(--white);
+}
+
+.not-found-picture,
+.not-found-info {
+   grid-area: 1 / 1;
+}
+
+.not-found-picture {
+   height: 100%;
+}
+
+.not-found-picture img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.not-found-info {
+   display: flex;
+   align-items: flex-end;
+   padding-block: 160px 64px;
+   background:
+      linear-gradient(to top, rgb(10 16 13 / 0.85) 0%, rgb(10 16 13 / 0) 70%),
+      rgb(10 16 13 / 0.3);
+}
+
+.not-found-code {
+   font-family: var(--font-heading);
+   font-weight: 700;
+   font-size: 128px;
+   line-height: 1;
+   letter-spacing: -2.9px;
+   color: var(--color-orange);
+}
+
+.not-found h1 {
+   margin-top: 8px;
+   font-size: 56px;
+   line-height: 60px;
+   letter-spacing: -1.6px;
+}
+
+.not-found-text {
+   max-width: 480px;
+   margin-top: 16px;
+   font-size: 18px;
+   line-height: 28px;
+}
+
+.not-found-actions {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 16px 24px;
+   margin-top: 32px;
+}
