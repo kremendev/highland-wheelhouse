@@ -56,6 +56,10 @@ ol {
    margin: 0;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: var(--font-body);
    font-weight: 400;

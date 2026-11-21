@@ -1,0 +1,79 @@
+/* Contact us modal */
+
+.contact-modal {
+   width: 560px;
+   padding: 40px;
+   border: none;
+   border-radius: var(--radius);
+   background-color: var(--color-cream);
+}
+
+.contact-modal::backdrop {
+   background-color: rgb(10 16 13 / 0.6);
+}
+
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.contact-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.contact-form label {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   font-size: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+   height: 56px;
+   padding: 0 24px;
+   border: 1px solid rgb(31 31 31 / 0.3);
+   border-radius: 999px;
+   background-color: var(--white);
+}
+
+.contact-form textarea {
+   height: 120px;
+   padding: 16px 24px;
+   border-radius: var(--radius);
+   resize: none;
+}
+
+/* errors */
+
+.contact-form .invalid {
+   border-color: #b3261e;
+}
+
+.contact-form .error {
+   font-size: 13px;
+   color: #b3261e;
+}
+
+.contact-form .error:empty {
+   display: none;
+}
+
+/* checkbox row */
+
+.contact-form .contact-checkbox {
+   flex-direction: row;
+   align-items: flex-start;
+   gap: 12px;
+}
+
+.contact-checkbox input {
+   flex: none;
+   width: 18px;
+   height: 18px;
+   margin: 2px 0 0;
+   accent-color: var(--bento-background);
+}

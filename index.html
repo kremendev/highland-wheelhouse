@@ -19,6 +19,7 @@
       <script src="js/offer-cards/offer-cards-function.js" defer></script>
       <script src="js/offer-cards/offer-cards-slider.js" defer></script>
       <script src="js/trails/trails-table-function.js" defer></script>
+      <script src="js/contact/contact-modal.js" defer></script>
    </head>
    <body>
       <header class="header-on-photo">
@@ -31,15 +32,14 @@
             </div>
             <nav>
                <ul>
-                  <li><a href="index.html" aria-current="page">Home</a></li>
-                  <li><a href="pages/bikes.html">Bikes</a></li>
-                  <li>
-                     <a href="pages/bike-servicing.html">Bike Servicing</a>
-                  </li>
-                  <li><a href="pages/bike-hire.html">Bike Hire</a></li>
+                  <li><a href="#top" aria-current="page">Home</a></li>
+                  <li><a href="#offers">Bikes</a></li>
+                  <li><a href="#trails">Trails</a></li>
+                  <li><a href="#servicing">Bike Servicing</a></li>
+                  <li><a href="#hire">Bike Hire</a></li>
                </ul>
             </nav>
-            <a class="button-on-photo" href="pages/contact.html">Contact us</a>
+            <a class="button-on-photo open-contact" href="#contact">Contact us</a>
          </div>
       </header>
 
@@ -76,9 +76,7 @@
                      at our door.
                   </p>
                   <div class="hero-actions">
-                     <a class="button-main" href="pages/bike-hire.html"
-                        >Hire a bike</a
-                     >
+                     <a class="button-main" href="#hire">Hire a bike</a>
                      <a class="hero-link" href="#offers">
                         See this month’s offers
                         <span aria-hidden="true">→</span>
@@ -110,7 +108,7 @@
                <div class="bento grid">
                   <!-- TODO SOURCE AND MEDIA FOR PICTURES -->
                   <!-- TODO CHANGE ARROW FOR IMAGES -->
-                  <a class="bike-hire" href="pages/bike-hire.html">
+                  <a class="bike-hire" href="#hire">
                      <div class="picture-container">
                         <picture>
                            <img
@@ -213,7 +211,11 @@
                            and today’s trail conditions.
                         </p>
                         <div class="ask-team-link">
-                           <a style="color: white" href="#offers">
+                           <a
+                              class="open-contact"
+                              style="color: white"
+                              href="#contact"
+                           >
                               Ask the team
                               <span aria-hidden="true">→</span>
                            </a>
@@ -224,7 +226,7 @@
             </div>
          </section>
 
-         <section class="month-offer section">
+         <section class="month-offer section" id="offers">
             <div class="container">
                <div class="month-offer-header grid">
                   <h2>This month's offers</h2>
@@ -272,7 +274,7 @@
 
          <!--  section with trail types -->
 
-         <section class="trails-section section">
+         <section class="trails-section section" id="trails">
             <div class="container grid">
                <picture class="trail-rider-picture">
                   <source />
@@ -296,7 +298,7 @@
 
          <!-- section with prices -->
 
-         <section class="prices-section section">
+         <section class="prices-section section" id="hire">
             <div class="container grid">
                <div class="prices-header grid">
                   <h2>Hire and servicing prices</h2>
@@ -365,7 +367,7 @@
                         by an adult over 18.
                      </p>
                   </div>
-                  <div class="servicing-list">
+                  <div class="servicing-list" id="servicing">
                      <table class="servicing-table">
                         <tr>
                            <td colspan="2"><h3>Servicing</h3></td>
@@ -457,7 +459,7 @@
                            ✉️ hello@HighlandWheelhouse.co.uk
                         </a>
                      </div>
-                     <a class="button-main" href="pages/contact.html">Contact us</a>
+                     <a class="button-main open-contact" href="#contact">Contact us</a>
                      <a
                         class="button-second"
                         href="https://www.google.com/maps/search/Wilderness+Forest+Fort+Coe"
@@ -491,12 +493,10 @@
                </div>
                <nav>
                   <ul>
-                     <li><a href="pages/bikes.html">Bikes</a></li>
-                     <li>
-                        <a href="pages/bike-servicing.html">Bike Servicing</a>
-                     </li>
-                     <li><a href="pages/bike-hire.html">Bike Hire</a></li>
-                     <li><a href="pages/contact.html">Contact</a></li>
+                     <li><a href="#offers">Bikes</a></li>
+                     <li><a href="#servicing">Bike Servicing</a></li>
+                     <li><a href="#hire">Bike Hire</a></li>
+                     <li><a class="open-contact" href="#contact">Contact</a></li>
                   </ul>
                </nav>
                <!-- TODO LINKS FOR SOCIAL MEDIA -->
@@ -525,5 +525,57 @@
             </div>
          </div>
       </footer>
+
+      <!-- contact us modal -->
+
+      <dialog class="contact-modal" id="contact">
+         <form class="contact-form" method="dialog" novalidate>
+            <div class="contact-header">
+               <h2>Contact us</h2>
+               <button
+                  class="slide-arrow contact-close"
+                  type="button"
+                  aria-label="Close"
+               >
+                  ✕
+               </button>
+            </div>
+            <label>
+               Name
+               <input type="text" name="name" placeholder="Your name" required />
+               <span class="error"></span>
+            </label>
+            <label>
+               Phone number
+               <input type="tel" name="phone" placeholder="Your phone number" />
+               <span class="error"></span>
+            </label>
+            <label>
+               Email
+               <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+               />
+               <span class="error"></span>
+            </label>
+            <label>
+               Message
+               <textarea
+                  name="message"
+                  placeholder="How can we help?"
+                  required
+               ></textarea>
+               <span class="error"></span>
+            </label>
+            <label class="contact-checkbox">
+               <input type="checkbox" name="news" />
+               Email me Highland Wheelhouse offers and events. You can
+               unsubscribe at any time.
+            </label>
+            <button class="button-main" type="submit">Send message</button>
+         </form>
+      </dialog>
    </body>
 </html>
