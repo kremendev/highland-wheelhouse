@@ -1,0 +1,105 @@
+/* Media: layout and components */
+
+@media (max-width: 1360px) {
+   .footer-email a {
+      font-size: 6.5vw;
+      line-height: 1.1;
+   }
+}
+
+@media (max-width: 1024px) {
+   header nav ul {
+      gap: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   /* layout */
+
+   :root {
+      --page-margin: 20px;
+   }
+
+   .section {
+      padding-block: 80px;
+   }
+
+   .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   h2 {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.8px;
+   }
+
+   /* header */
+
+   header {
+      height: auto;
+      padding-block: 16px;
+   }
+
+   .header-inner {
+      flex-wrap: wrap;
+      row-gap: 12px;
+   }
+
+   header nav {
+      order: 3;
+      width: 100%;
+   }
+
+   header nav ul {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 8px 20px;
+      white-space: nowrap;
+   }
+
+   /* hire form */
+
+   .hire-form-container {
+      padding: 24px;
+   }
+
+   /* visit card */
+
+   .visit-card {
+      width: 100%;
+      padding: 24px;
+   }
+
+   .open-now,
+   .open-times td + td {
+      white-space: nowrap;
+   }
+
+   /* footer */
+
+   .footer-social {
+      flex-direction: row;
+   }
+
+   .footer-email {
+      margin-top: 64px;
+   }
+
+   .footer-email a {
+      letter-spacing: -0.8px;
+   }
+
+   .footer-bottom {
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   /* contact modal */
+
+   .contact-modal {
+      padding: 24px;
+   }
+}
