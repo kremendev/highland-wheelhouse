@@ -84,6 +84,11 @@
    text-underline-offset: 4px;
    color: var(--white);
 }
+
+.trail-link:hover {
+   text-decoration-color: var(--color-orange);
+   text-decoration-thickness: 2px;
+}
 /* Expanded content */
 
 .trail-body {
@@ -96,4 +101,8 @@
 .trail-description {
    font-size: 16px;
    line-height: 24px;
+}
+
+.trail-body .bike-type {
+   color: inherit;
 }

@@ -45,6 +45,10 @@
    font-size: 15px;
 }
 
+.choose-bike-form button:hover {
+   border-color: var(--bento-background);
+}
+
 .time-buttons {
    display: flex;
    width: 100%;
@@ -62,6 +66,10 @@
    font-family: var(--font-heading);
    font-weight: 500;
    font-size: 15px;
+}
+
+.time-buttons button:not(.active):hover {
+   background-color: rgb(46 87 75 / 0.12);
 }
 
 .hire-form-container .active {
@@ -87,7 +95,7 @@
    font-family: var(--font-body);
    font-weight: 400;
    font-size: 15px;
-   color: rgb(31 31 31 / 0.6);
+   color: rgb(31 31 31 / 0.7);
 }
 
 .bikeNtime-container h2 {
@@ -96,5 +104,5 @@
 
 .hire-form-container > p {
    font-size: 15px;
-   color: rgb(31 31 31 / 0.6);
+   color: rgb(31 31 31 / 0.7);
 }

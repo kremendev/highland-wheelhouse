@@ -37,13 +37,13 @@
    font-family: var(--font-body);
    font-weight: 400;
    font-size: 15px;
-   color: rgb(31 31 31 / 0.6);
+   color: rgb(31 31 31 / 0.7);
 }
 
 .bike-hire-container p {
    margin-top: 12px;
    font-size: 15px;
-   color: rgb(31 31 31 / 0.6);
+   color: rgb(31 31 31 / 0.7);
 }
 
 .servicing-list {

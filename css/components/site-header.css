@@ -37,3 +37,8 @@ nav ul {
    list-style: none;
    padding: 0;
 }
+
+nav a:hover {
+   text-decoration: underline;
+   text-underline-offset: 6px;
+}

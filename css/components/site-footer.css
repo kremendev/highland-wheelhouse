@@ -57,6 +57,10 @@ footer nav ul {
    background-color: var(--color-raised-deep);
 }
 
+.footer-social a:hover {
+   background-color: var(--bento-background);
+}
+
 .footer-social img {
    width: 20px;
 }
@@ -83,6 +87,10 @@ footer nav ul {
    color: var(--color-cream);
 }
 
+.footer-email a:hover {
+   color: var(--color-orange);
+}
+
 /* bottom row */
 
 .footer-bottom {
@@ -97,4 +105,8 @@ footer nav ul {
 .footer-bottom a {
    text-decoration: underline;
    text-underline-offset: 4px;
+}
+
+.footer-bottom a:hover {
+   color: var(--white);
 }

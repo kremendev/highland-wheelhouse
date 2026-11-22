@@ -50,7 +50,7 @@
 .bike-type {
    font-size: 15px;
    line-height: 22px;
-   color: rgb(31 31 31 / 0.6);
+   color: rgb(31 31 31 / 0.7);
 }
 
 .bike-link {
@@ -62,4 +62,9 @@
    text-decoration: underline;
    text-underline-offset: 4px;
    color: var(--bento-background);
+}
+
+.bike-link:hover {
+   text-decoration-color: var(--color-orange);
+   text-decoration-thickness: 2px;
 }
